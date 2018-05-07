@@ -1,11 +1,14 @@
-DROP DATABASE IF EXISTS burgers_db;
+13 lines (12 sloc)  311 Bytes
+-- Create the database burgers_db
 CREATE DATABASE burgers_db;
-USE burgers_db;
+USE `burgers_db`;
 
-CREATE TABLE `burgers` (
-
-id int NOT NULL AUTO_INCREMENT,
-burger_name  varchar(250) NOT NULL,
-devoured BOOLEAN DEFAULT false,
-PRIMARY KEY (id)
+-- Create the table burgers
+CREATE TABLE `burgers`
+(
+	`id` int(10) NOT NULL AUTO_INCREMENT,
+	`burger_name` VARCHAR(255) NOT NULL,
+	`devoured` BOOLEAN DEFAULT false,
+	`date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
 );

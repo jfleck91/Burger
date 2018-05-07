@@ -1,5 +1,6 @@
-INSERT INTO burgers (burger_name) VALUES ('Bacon Cheeseburger');
-INSERT INTO burgers (burger_name) VALUES ('Double Cheeseburger');
-INSERT INTO burgers (burger_name) VALUES ('Cheeseburger');
-INSERT INTO burgers (burger_name, devoured) VALUES ('turkey burger', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('hamburger', true);
+USE `burgers_db`;
+
+-- insert 3 burgers
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Fish Fillet', false, CURRENT_TIMESTAMP);
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Roast Beef', false, CURRENT_TIMESTAMP);
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Quarter Pounder', false, CURRENT_TIMESTAMP);
